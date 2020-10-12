@@ -10,35 +10,38 @@
 </a>
 <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-            <a class="js-scroll-trigger" href="#page-top">Start</a>
-        </li>
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#page-top">Home</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#services">Services</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#contact">Contact</a>
+            <a class="js-scroll-trigger" href="#page-top"></a>
         </li>
     </ul>
 </nav>
 
 <!-- Header -->
-<header class="masthead d-flex">
+<header class="masthead d-flex" style="font-family: MedievalSharp">
     <div class="container text-center my-auto">
-        <h1 class="mb-1">Bootstrap</h1>
-        <h3 class="mb-5">
-            <em>A Bootstrap Theme for Jekyll</em>
+        <h1 class="mb-1">{{ page.title }}</h1>
+        <h3 class="mb-5 MedievalSharp; ">
+            <em>Generate a Name</em>
         </h3>
-        <a id="cta-button" class="btn btn-primary btn-xl js-scroll-trigger btn-no-bold" href="#about">Find Out More</a>
+        <form id="generate-name-form">
+            <ul style="list-style-type: none;">
+                <li>
+                    <label>Length Min: </label>
+                    <select name="min-length" class='length-selection'>Length</select>
+                </li>
+                <li>
+                    <label>Length Max: </label>
+                    <select name="max-length" class='length-selection'>Length</select>
+                </li>
+                <li>
+                    <button type="submit" class="btn btn-primary btn-no-bold">Generate</button>
+                </li>
+            </ul>
+        </form>
+        <h4 class="mb-5">
+            <label>Generated Name: </label>
+            <span id="random-name" style="font-weight:bold"/>
+        </h4>
     </div>
     <div class="overlay"></div>
 </header>
