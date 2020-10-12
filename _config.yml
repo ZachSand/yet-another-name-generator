@@ -1,0 +1,13 @@
+title:              Yet Another Name Generator
+email:              zachsand@utexas.edu
+description:        Simple name generator
+author:             Zachary Sanders
+url:                "https://ZachSand.github.io"
+
+theme: jekyll-theme-onepage
+
+# Social Profiles
+github_username:    ZachSand
+
+# Build settings
+markdown:           kramdown
