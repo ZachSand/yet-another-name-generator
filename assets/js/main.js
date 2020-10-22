@@ -23,7 +23,7 @@ $(function(){
         let minLength = values["min-length"];
         let maxLength = values["max-length"];
 
-        if(minLength > maxLength) {
+        if(parseInt(minLength) > parseInt(maxLength)) {
             alert("Min length can't be greater than max length");
             return;
         }
