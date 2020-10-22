@@ -17,7 +17,7 @@
 </nav>
 
 <!-- Header -->
-<header class="masthead d-flex" style="font-family: MedievalSharp">
+<header class="masthead d-flex">
     <div class="container text-center my-auto">
         <h1 class="mb-1">{{ page.title }}</h1>
         <h3 class="mb-5 MedievalSharp; ">
@@ -32,6 +32,10 @@
                 <li>
                     <label>Length Max: </label>
                     <select name="max-length" class='length-selection'>Length</select>
+                </li>
+                <li>
+                    <label>Origin: </label>
+                    <select name="origin" class="origin-selection"></select>
                 </li>
                 <li>
                     <button type="submit" class="btn btn-primary btn-no-bold">Generate</button>
@@ -61,6 +65,7 @@
 <script src="{{ "/assets/js/vendor/jquery.easing.min.js" | relative_url }}"></script>
 
 <!-- Custom scripts for this template -->
+<script src="{{ "/assets/data/names.js" | relative_url }}"></script>
 <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
 
 </body>
