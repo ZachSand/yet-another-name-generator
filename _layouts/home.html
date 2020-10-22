@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top">
+<!-- Navigation -->
+<a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#page-top"></a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<header class="masthead d-flex">
+    <div class="container text-center my-auto">
+        <h1 class="mb-1">{{ page.title }}</h1>
+        <h3 class="mb-5 MedievalSharp; ">
+            <em>Generate a Name</em>
+        </h3>
+        <form id="generate-name-form">
+            <ul style="list-style-type: none;">
+                <li>
+                    <label>Length Min: </label>
+                    <select name="min-length" class='length-selection'>Length</select>
+                </li>
+                <li>
+                    <label>Length Max: </label>
+                    <select name="max-length" class='length-selection'>Length</select>
+                </li>
+                <li>
+                    <label>Origin: </label>
+                    <select name="origin" class="origin-selection"></select>
+                </li>
+                <li>
+                    <button type="submit" class="btn btn-primary btn-no-bold">Generate</button>
+                </li>
+            </ul>
+        </form>
+        <h4 class="mb-5">
+            <label>Generated Name: </label>
+            <span id="random-name" style="font-weight:bold"/>
+        </h4>
+    </div>
+    <div class="overlay"></div>
+</header>
+
+{% include footer.html %}
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{ "/assets/js/vendor/jquery.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/vendor/bootstrap.bundle.min.js" | relative_url }}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="{{ "/assets/js/vendor/jquery.easing.min.js" | relative_url }}"></script>
+
+<!-- Custom scripts for this template -->
+<script src="{{ "/assets/data/names.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+
+</body>
+
+</html>
