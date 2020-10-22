@@ -2,6 +2,7 @@ title:              Yet Another Name Generator
 email:              zachsand@utexas.edu
 description:        Simple name generator
 author:             Zachary Sanders
+baseurl:            "/yet-another-name-generator"
 url:                "https://ZachSand.github.io"
 
 remote_theme: jekyll-theme-onepage
