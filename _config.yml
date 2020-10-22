@@ -5,7 +5,7 @@ author:             Zachary Sanders
 baseurl:            "/yet-another-name-generator"
 url:                "https://ZachSand.github.io"
 
-remote_theme: jekyll-theme-onepage
+remote_theme: ErwanJes/jekyll-theme-onepage
 
 # Social Profiles
 github_username:    ZachSand
